@@ -1,0 +1,154 @@
+@keyframes slidesm {
+    from {
+    margin-left: -200%;
+    width: 100%; 
+    }
+    to {
+        margin-left: 0;
+        width: 100%;
+    }
+  }
+
+  @keyframes slidelg {
+    from {
+    margin-left: -100%;
+    width: 50%;
+  }
+    to {
+        margin-left: 0; 
+        width: 50%;   
+    }
+  }
+  @keyframes slidelg2 {
+    from {
+    margin-right: -100%;
+    width: 50%;  
+    }
+    to {
+        margin-right: 0; 
+        width: 50%;    
+    }
+  }
+.products{
+background-color: white;
+padding: 6rem 0;
+};
+.products .container{
+    max-width: 36rem;
+    margin: 0 auto;
+    @include flex (column, $align:center);
+    gap: 3rem;
+    @include lg{
+        max-width: 125rem;   
+        @include flex(row, space-between);  
+        height: 120rem; 
+    }
+    .product-1{
+        @include flex (column, $align:center);
+        gap: 2rem;
+
+        @include lg{
+            width: 50%;
+            align-items:flex-start;
+
+        }
+
+        h2{
+
+            color:map-get($colors , 'main green');
+            @include fonts($line:2.1rem);
+            @include lg{
+                @include fonts(400, 2rem, 2.6rem);
+            }
+        }
+        h1{
+            width: 28rem;
+            text-align: center;
+
+            color: #212121;
+            @include fonts($size:2.4rem, $line:3.1rem);
+            @include lg{
+                @include fonts (400, 3.4rem, 4.3rem);
+                text-align:start;
+            }
+
+
+        }
+        .product-1-img{
+            width: 100%;
+            margin: 2rem 0;
+            img{
+                width: 100%;
+                border-radius: 1rem;
+            }
+
+        }
+        .product-1-img img{
+            transition: opacity 0.2s;
+        }
+        .product-1-img img:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+        
+    }
+    .product-1-animation{
+        animation-duration: 1s;
+        animation-name: slidesm ;
+        @include lg{
+        animation-name: slidelg ;
+    }
+        
+
+    }
+    .product-2-animation{
+        animation-duration: 1s;
+        animation-name: slidesm ;
+        @include lg{
+         animation-name: slidelg2 ;
+}
+
+    }
+
+    .product-2{
+        width: 100%;
+        @include flex(column);
+        gap: 3rem;
+        @include lg{
+            width: 50%;
+            height:100%;
+            gap: 10rem;
+
+
+        }
+        .product-2-img img{
+            width: 100%;
+            border-radius: 1rem;
+            transition: opacity 0.2s;
+            
+
+        }
+        .product-2-img img:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+        .see-all-products{
+            @include flex (row, center, center);
+            gap: 1rem;
+            @include lg{
+                @include flex (row, flex-end);
+
+
+            }
+            a{
+                color:map-get($colors , 'main blue' );
+                @include fonts(400, $line: 2rem);
+                @include lg{
+                    @include fonts(400, 2rem, 2.6rem);
+                }
+            }
+        }
+            
+    }
+}
+

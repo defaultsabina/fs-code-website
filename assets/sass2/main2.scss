@@ -1,0 +1,14 @@
+@import '../sass/reset';
+@import '../sass/variables';
+@import '../sass/mixin';
+
+html{
+    font-size: 10px;
+}
+body{
+    overflow-x: hidden;
+}
+@import './_header.scss';
+@import './_blog.scss';
+@import './_footer.scss';
+

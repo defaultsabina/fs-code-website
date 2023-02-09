@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Euclid Circular A';
+    src: url("../fonts/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf");
+}
+@mixin fonts( $weight: 400, $size: 1.6rem, $line: 2.4rem , $font-family:'Euclid Circular A'){
+    font-family: $font-family;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $line;
+
+};
+@mixin flex($direction:row, $justify: null, $align: null, $wrap: null){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+};
+@mixin sm(){
+    @media screen and (min-width: map-get($mobile-screens , 'sm')) {
+        @content
+    }
+};
+@mixin md(){
+    @media screen and (min-width: map-get($mobile-screens, 'md')) {
+        @content
+    }
+};
+@mixin lg(){
+    @media screen and (min-width: map-get($mobile-screens, 'lg')) {
+        @content
+    }
+};

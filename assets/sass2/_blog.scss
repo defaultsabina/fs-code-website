@@ -1,0 +1,226 @@
+
+  @keyframes slideleft {
+    from {
+    margin-left: -100%;
+  }
+    to {
+        margin-left: 0; 
+    }
+  }
+  @keyframes slideright {
+    from {
+    margin-right: -100%;
+    }
+    to {
+        margin-right: 0; 
+    }
+  }
+
+.blog{
+    background-color: white;
+    padding: 6rem 0;
+    h1{
+        @include fonts (400, 2.4rem, 3.1rem);
+        color:#212121;
+        width: 100%;
+        text-align:center;
+        margin-bottom: 4rem;
+        @include lg{
+            @include fonts(400, 3.4rem, 4.4rem);
+        }
+    }
+    span.title-blog{
+        display: inline-block;
+        animation-duration: 1s;
+        animation-name: slideright ;
+
+    }
+}
+
+.blog .container{
+        max-width: 36rem;
+        margin: 0 auto;
+        @include flex (column, $align:center);
+        gap: 4.8rem;
+        @include lg{
+            max-width: 125rem;
+
+        }
+        .buttons{
+            width: 100%;
+            @include flex(row, center, center);
+            gap: 2rem;
+            animation-duration: 1s;
+            animation-name: slideleft ;
+            .social-networks{
+                width: 16rem;
+                height: 4rem;
+                background-color: map-get($colors, 'main green');
+                color:white;
+                @include fonts (400, 1.6rem, 2.1rem);
+                @include flex (row, center, center);
+                border-radius:8px;
+            }
+            .plugin{
+                width: 16rem;
+                height: 4rem;
+                color:black;
+                @include fonts (400, 1.6rem, 2.1rem);
+                @include flex (row, center, center);
+
+
+            }
+            .plugin:hover{
+                border: 1px solid map-get($colors, 'main green');
+                border-radius:8px;
+
+
+            }
+        }
+        section{
+            @include lg{
+                @include flex(row, space-between);
+                width: 100%;
+                gap: 3rem;
+            }
+          
+        }
+        .card-section{
+            @include lg{
+                @include flex(column);
+                gap: 3rem;
+
+            }
+        }
+        .card{
+            @include flex (column, $align:center);
+            width: 100%;
+            gap: 2.5rem;
+            border:1px solid white;
+            border-radius:9px;
+            padding: 1rem;
+            transition: border 0.2s;
+            @include lg{
+                width: 60rem;
+                height: 56rem;
+                padding: 0.5rem;
+            }
+            .card-img{
+                width: 100%;
+                img{                
+                  width: 100%;   
+                  
+                }
+            }
+            .card-content{
+                @include flex (column, center, flex-start);
+                gap: 2.5rem;
+                @include lg{
+                    gap: 1.5rem;
+
+                }
+                h4{
+                    color: map-get($colors, 'main green');
+                    @include fonts(400, 1.4rem, 1.8rem);
+                    @include lg{
+                        @include fonts(400, 1.6rem, 2.1rem);
+                    }
+                }
+                h3{
+                     color:#27565E;
+                    @include fonts(400, 2rem, 2.4rem);
+                    @include lg{
+                        @include fonts(400, 2.4rem, 3.2rem);
+                    }
+
+
+                }
+                p{
+                    color:#8B8B8B;
+                    @include fonts(400, 1.2rem, 1.6rem);
+                    @include lg{
+                        @include fonts(400, 1.6rem, 2.1rem);
+                    }
+
+
+                }
+
+
+            }
+            
+
+
+        }
+        
+        .card:hover{
+            border:1px solid map-get($colors, 'main green');
+            border-radius:9px;
+            cursor: pointer;
+        }
+        .card:hover h3{
+            color:map-get($colors, 'main green');
+
+        }
+    .page-numbering{
+        text-align: center;
+       
+        .pagination{
+            display: inline-block;
+           
+            .lg, .add-lg{
+                display: none;
+            }
+            @include lg{
+                .sm{
+                    display: none;
+                }
+                .lg, .add-lg{
+                    display: flex;
+                }
+            }
+            a {
+                color: black;
+                float: left;
+                text-decoration: none;
+                transition: background-color .3s;
+                margin: 0 4px;
+                width: 3.2rem;
+                height: 4rem;
+                @include fonts(400, 2rem, 2.5rem);
+                @include flex(row, center, center);
+
+                img.sm{
+                    width: 3.6rem;
+                    height: 3.6rem;
+                    
+                }
+                img.lg{
+                    width: 8.3rem;
+                    height: 3.6rem;
+                    
+                }
+               
+              }
+              a.lg{
+                margin: 0 10rem;
+            }
+              a.active {
+                background-color: #43BA7F;
+                color: white;
+                border: 1px solid #43BA7F;
+                border-radius:8px;
+              }
+              a.not-active:hover  {
+                background-color: #ddd;
+                border-radius:8px;
+
+              }
+              
+              
+        }
+         
+         
+          
+    }    
+
+}

@@ -1,0 +1,96 @@
+.how-we-do{
+    background-color:#0D1118;
+    color:white;
+    padding: 6rem 0;
+    @include lg{
+        height: 55rem;
+    }
+}
+.how-we-do .container{
+    position: relative;
+    max-width: 36rem;
+    margin: 0 auto;
+    @include flex (column);
+    gap: 6rem;
+    @include lg{
+        max-width: 125rem;
+        @include flex(row, flex-start, center);
+        height: 100%;
+    }
+    
+    
+    h1{
+        width: 100%;
+        text-align: center;
+        @include fonts(400, 2.4rem, 3rem);
+        @include lg{
+            transform: rotate(270deg);
+            text-align:end;
+            height: 5rem;
+            width: 23rem;
+            padding-top:2rem;
+            
+        }
+    }
+    .icon {
+        @include lg{
+            height: 100%;
+        }
+        img{
+            @include lg{
+            width: 13.6rem;
+            height: 8rem;
+
+            }
+            
+        }
+    }
+    .content{
+        @include flex(column);
+        gap: 4rem;
+        @include lg{
+             width: 50rem;
+             height: 100%;
+             justify-content: flex-end;
+             gap: 9rem;
+             padding-left: 7rem;
+        }
+
+        .code-arrows{
+            position: absolute;
+            top: 20%;
+            right: 0;
+            @include lg{
+                width: 51.5px;
+                left: 44.5%;
+                top:11%;
+            }
+        }
+        p{
+            @include fonts();
+            
+        }
+        .author{
+            @include flex(row);
+            gap: 2rem;
+            img{
+                width: 6.4rem;
+                height:auto;
+            }
+            .author-info{
+                @include flex(column, space-around);
+                h4{
+                    @include fonts(400, 2rem, 2rem);
+                    color: #6E7581;
+                }
+                h5{
+                    @include fonts(400, 1.6rem, 2rem);
+                    color: #6E7581;
+
+                }
+                
+            }
+        }
+
+    }
+}

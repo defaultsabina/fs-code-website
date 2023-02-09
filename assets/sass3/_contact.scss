@@ -1,0 +1,353 @@
+
+  @keyframes slideleft {
+    from {
+    margin-left: -100%;
+  }
+    to {
+        margin-left: 0; 
+    }
+  }
+  @keyframes slideright {
+    from {
+    margin-right: -100%;
+    }
+    to {
+        margin-right: 0; 
+    }
+  }
+  
+
+.contact{
+    background-color: #FAF4E7;
+    padding: 6rem 0;
+    @include lg{
+        padding-bottom:  12rem;
+    }
+    h1{
+        @include fonts (400, 2.4rem, 3.1rem);
+        color:#212121;
+        width: 100%;
+        text-align:center;
+        margin-bottom: 4rem;
+            @include lg{
+            @include fonts (400, 3.4rem, 4.3rem);
+        }
+    }
+    span.title-contact{
+        display: inline-block;
+        animation-duration: 1s;
+        animation-name: slideright ;
+
+    }
+
+}
+.contact .container{
+    max-width: 36rem;
+    margin: 0 auto;
+    @include flex (column, $align:center);
+    gap: 6rem;
+    @include lg{
+        max-width: 125rem;
+        gap: 8rem;
+    }
+    .sub-title-contact{
+        width:100%;
+        @include fonts ();
+        text-align:center;
+        color:#343434;
+        animation-duration: 1s;
+        animation-name: slideleft ;
+        @include lg{
+            @include fonts (400, 2rem, 3.2rem);
+            width: 81rem;
+        }
+    }
+
+    .get-in-touch{
+        width:100%;
+        @include flex (column, $align:flex-start);
+        gap: 1rem;
+
+        h5{
+            @include fonts ();
+            color:#677480;
+            @include lg{
+                @include fonts (400, 2rem, 3.2rem);
+            }
+
+        }
+        h3{
+            @include fonts (400, 2.4rem, 3.1rem);
+            color:#212121;
+            @include lg{
+                @include fonts (400, 3.4rem, 4.3rem);
+            }
+
+        }
+    }
+    .my-info{
+        width:100%;
+        @include flex (column, $align:center);
+        gap: 6rem;
+        @include lg{
+            @include flex (row, space-between);
+            gap: 0rem;
+        }
+        .name{
+            width:100%;
+            @include flex (column, $align:flex-start);
+            gap: 2rem;
+            @include lg{
+                width: 45%;
+                @include flex (row, space-between);
+                gap: 0rem;
+
+            }
+            label{
+                @include fonts (400, 2rem, 2.6rem);
+                color:#212121;
+                @include lg{
+                    width: 40%;
+                    @include fonts (400, 2.4rem, 3.1rem);
+
+                }
+
+            }
+            input{
+                text-align:center;
+                @include fonts (400, 1.6rem, 2.1rem);
+                width:100%;
+                background-color:#FAF4E7;
+                border:none;
+                border-bottom:1px solid #b5bcc3;
+                @include lg{
+                    width: 60%;
+                    @include fonts (400, 2rem, 2.5rem);
+
+                }
+            }
+            input::placeholder{
+                color:#FF8145;
+                opacity: 0.5;
+            }
+
+
+        }
+        .look-for{
+            width:100%;
+            @include flex (column, $align:flex-start);
+            gap: 2rem;
+            @include lg{
+                width: 45%;
+                @include flex (row, space-between);
+                gap: 0;
+
+
+            }
+            label{
+                @include fonts (400, 2rem, 2.6rem);
+                color:#212121;
+                @include lg{
+                    width: 40%;
+                    @include fonts (400, 2.4rem, 3.1rem);
+
+                }
+
+            }
+            select{
+                cursor: pointer;
+                text-align:center;
+                @include fonts (400, 1.6rem, 2.1rem);
+                width:100%;
+                background-color:#FAF4E7;
+                border:none;
+                color:#FF8145;
+                opacity: 0.5;
+                border-bottom:1px solid #9AA2AB;
+                @include lg{
+                    width: 60%;
+                    @include fonts (400, 2rem, 2.5rem);
+
+                }
+                
+
+            }
+           }
+    }
+    .my-contacts{
+
+        width:100%;
+        @include flex (column, $align:center);
+        gap: 6rem;
+        @include lg{
+            @include flex (row, space-between);
+            gap: 0rem;
+        }
+        .email{
+            width:100%;
+            @include flex (column, $align:flex-start);
+            gap: 2rem;
+            @include lg{
+                width: 45%;
+                @include flex (row, space-between);
+                gap: 0;
+
+
+            }
+            label{
+                @include fonts (400, 2rem, 2.6rem);
+                color:#212121;
+                @include lg{
+                    width: 40%;
+                    @include fonts (400, 2.4rem, 3.1rem);
+
+                }
+
+            }
+            input{
+                text-align:center;
+                @include fonts (400, 1.6rem, 2.1rem);
+                width:100%;
+                background-color:#FAF4E7;
+                border:none;
+                border-bottom:1px solid #b5bcc3;
+                @include lg{
+                    width: 60%;
+                    @include fonts (400, 2rem, 2.5rem);
+
+                }
+
+            }
+            input::placeholder{
+                color:#FF8145;
+                opacity: 0.5;
+            }
+
+        }
+        .phone{
+            width:100%;
+            @include flex (column, $align:flex-start);
+            gap: 2rem;
+            @include lg{
+                width: 45%;
+                @include flex (row, space-between);
+                gap: 0;
+
+
+            }
+            label{
+                @include fonts (400, 2rem, 2.6rem);
+                color:#212121;
+                @include lg{
+                    width: 40%;
+                    @include fonts (400, 2.4rem, 3.1rem);
+
+                }
+
+               
+            }
+            input{
+                text-align:center;
+                @include fonts (400, 1.6rem, 2.1rem);
+                width:100%;
+                background-color:#FAF4E7;
+                border:none;
+                border-bottom:1px solid #b5bcc3;
+                @include lg{
+                    width: 60%;
+                    @include fonts (400, 2rem, 2.5rem);
+
+                }
+
+            }
+            input::placeholder{
+                color:#FF8145;
+                opacity: 0.5;
+            }
+
+
+        }
+
+    }
+    .send{
+        width:100%;
+        @include flex (column, $align:center);
+        gap: 4rem;
+        @include lg{
+            align-items: flex-start;
+        }
+        .be-aware{
+            @include flex (row);
+            gap: 2rem;
+            width:100%;
+            input{
+                // color:#677480;
+                width:2.4rem;
+                height:2.4rem;
+            }
+            label{
+                @include fonts($size:1.6rem, $line:2.1rem);
+                color:#354556;
+                @include lg{
+                    @include fonts (400, 2rem, 2.5rem);
+                }
+            }
+
+
+        }
+        .btn-send{
+            @include flex(row, center,center);
+            width:33rem;
+            height:5rem;
+            background-color:#43BA7F;
+            border-radius:2.4rem;
+            gap: 1rem;
+            @include lg{
+                width: 17.6rem;
+            }
+            a{
+                color:white;
+                @include fonts(400, 1.4rem,1.8rem);
+
+            }
+            img{
+                width:0.9rem;
+                height:1.6rem;
+            }
+        }
+        padding-bottom: 7rem;
+        margin-bottom: 3rem;
+
+        border-bottom: 1px solid #CCD1D5;
+
+    }
+    .additional-info{
+        width:100%;
+        @include flex (column, $align:center);
+        gap: 4rem;
+        @include lg{
+            @include flex (row,center,flex-start);
+            gap: 12rem;
+        }
+         
+        .add-phone, .add-email, .add-location{
+            @include flex (column, $align:center);
+            width:18rem;
+            text-align:center;
+            gap: 1rem;
+            @include lg{
+                align-items: flex-start;
+
+            }
+            p{
+                @include fonts(400, 2rem, 2.6rem);
+                color:#02172C;
+            }
+            .add-icon{
+                padding-bottom: 1.5rem;
+            }
+    
+        }
+
+    }
+}

@@ -1,0 +1,27 @@
+$colors:(
+    'main green': #43BA7F,
+    'main yellow':#FCC231,
+    'main orange': #FF8145,
+    'main violet':#C282D1,
+    'main blue': #3878F2,
+    'blue light': #61FDF3,
+    'main bg': #FBF5F2,
+    'main dark': #343434,
+    'black 700': #02172C,
+    'black 600': #354556,
+    'black 500': #677480,
+    'black 400': #9AA2AB,
+    'black 300': #CCD1D5,
+    'black 100': #E6E8EA,
+    'info': #3699FF,
+    'success': #1ABC9C,
+    'pending': #FFA800,
+    'error-warning': #F64E60,
+    'disable': #E6E8EA,
+);
+$mobile-screens: (
+  'sm': 414px, //iPhone XR 
+  'md': 768px, //iPad Mini
+  'lg': 1025px, //desktops
+  
+);

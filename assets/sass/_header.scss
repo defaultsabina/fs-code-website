@@ -1,0 +1,321 @@
+.container-1 {
+  margin: 0 auto;
+  height: 7.2rem;
+  @include flex($justify: space-between, $align: center);
+}
+@keyframes slide-in-elliptic-top-fwd {
+  0% {
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotateX(0) scale(1);
+    transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
+@keyframes slidein {
+  from {
+    margin-left: -30rem;
+    width: 30rem;
+  }
+  to {
+    margin-left: 0;
+    width: 30rem;
+  }
+}
+@keyframes slidein2 {
+  from {
+    margin-left: -30rem;
+    width: 10rem;  
+  }
+
+  to {
+    margin-left: 0;
+     width: 30rem;
+  }
+}
+
+
+
+
+
+header {
+  opacity: 1;
+  background-image: url(../images/bg.png);
+  background-position: 25% 75%;
+  height: 55rem;
+  width: 100vw;
+  @include lg{
+    height:90rem;
+  }
+  .logo {
+    h1 {
+      @include fonts($line: 2.029rem);
+      transition: color .1s, font-size .3s;
+      @include lg{
+        @include fonts(400, 2.8rem, 3.55rem);
+      }
+    }
+    .home{
+    @include flex($align: center);
+    gap: 1.2rem;
+    color:white;
+
+    }
+    .home:hover{
+      color: map-get($colors, "main orange");
+      h1{
+        font-size: 2rem;
+        @include lg{
+          font-size: 3rem;
+        }
+      }
+      img{
+        width: 4rem;
+       height: 4rem;
+       @include lg{
+        width: 5rem;
+        height: 5rem;
+
+       }
+
+      }
+    }
+    img {
+      width: 3.33rem;
+      height: 3.33rem;
+      transition: width 0.3s, height 0.3s;
+      @include lg{
+        width: 4.8rem;
+        height:4.8rem;
+      }
+    }
+  }
+
+  nav {
+    @include flex($align: center);
+    gap: 1.2rem;
+    @include lg{
+      width:100rem;
+      justify-content: flex-end;
+      gap: 5rem;
+    }
+    .nav-list {
+
+      display: none;
+      z-index: 3;
+      @include lg{
+        display: block;
+      }
+
+    }
+    .show-list {
+      display: block;
+   
+    }
+    .sidebar{
+      display: none;
+      background-color:#3434;
+      opacity: 0.9;
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left:30rem;
+
+      @include lg{
+        display:none;
+      }
+
+
+    }
+    .sidebar-show{
+      display: block;
+      animation-duration: 1s;
+      animation-name: slidein2 ;
+
+    }
+    .ul-show{
+      animation-duration: 1s;
+      animation-name: slidein;
+    }
+
+
+    .ul-list {
+      .logo-in-menu {
+        display:none;
+        margin-top: -10rem;
+        margin-bottom: 6rem;
+        // margin-bottom: 3rem;
+
+        h2 {
+          @include fonts(400, 2rem, 2.5rem);
+          transition: color .1s, font-size .3s;        
+        }
+        .home-in-menu{
+        @include flex($align: center);
+        gap: 1.2rem;
+        color:black;
+    
+        }
+        .home-in-menu:hover{
+          color: map-get($colors, "main orange");
+          h2{
+            font-size: 2.1rem;
+          }
+          img{
+            width: 4rem;
+           height: 4rem;   
+          }
+        }
+        img {
+          width: 3.33rem;
+          height: 3.33rem;
+          transition: width 0.3s, height 0.3s;
+         
+        }
+      }
+    
+      .logo-show{
+        display:block;
+      }
+    
+      position: fixed;
+      top: 0;
+      left: 0;
+
+      @include flex($direction: column, $justify: center, $align: center);
+      gap: 3rem;
+      background-color: #FAF4E7;
+      height: 100vh;
+      width: 30rem;
+      @include lg{
+        border: none;
+        position: static;
+        @include flex(row, space-between, center);
+        height: auto;
+        width:30rem;
+        background-color:transparent;
+      }
+      li {
+        padding: 2rem 0;
+        @include lg{
+            border: none;
+            padding: 0;
+            width:8rem;
+            @include flex(row, center, center);
+
+          }
+        a{
+            @include fonts($size: 1.9em, $line: 2.3rem);
+            color:#343434;
+            transition: all 0.2s ease-in-out;
+            @include lg{
+              @include fonts($line:2.1rem);
+              color:white;
+              width:100%;
+            }
+
+    
+          }
+      }
+      li.sm{
+        @include lg{
+          display: none;
+        }
+      }
+      a.sm{
+      margin-top: 6rem;
+
+      width: 20rem;
+      height: 4.8rem;
+      background-color: map-get($colors, "main green");
+      @include flex($justify: center, $align: center);
+      border-radius: 2.4rem;
+
+        @include lg{
+          display: none;
+        }
+      }
+      li a:hover{
+          color: map-get($colors , 'main green' );
+          // font-size:2rem;
+          // @include lg{
+          //   @include fonts($size: 1.8rem, $line:2.1rem);
+          //   margin-left: -0.3rem;
+
+
+          // }
+
+      }
+    }
+
+    .btn-contact {
+      width: 11.2rem;
+      height: 4rem;
+      background-color: map-get($colors, "main green");
+      @include flex($justify: center, $align: center);
+      border-radius: 2.4rem;
+      @include lg{
+        width:12rem;
+        height:4.8rem;
+      }
+    }
+
+    a {
+      color: white;
+      @include fonts( $line: 2.029rem);
+    }
+    .hamburger {
+      cursor: pointer;
+      @include lg{
+        display: none;
+      }
+    }
+  }
+}
+
+.container-2 {
+  margin: 0 auto;
+  position: relative;
+  @include flex($justify: center, $align: center);
+  height: 28rem;
+  @include lg{
+    height:82.5rem;
+    @include flex(column, space-around);
+  }
+
+  .title {
+    width: 100%;
+    @include fonts($size: 3.75rem, $line: 5rem);
+    animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    text-align: center;
+    color: white;
+    @include lg{
+      width:80%;
+      @include fonts($size: 9.6rem, $line: 12rem);
+
+    }
+    span {
+      color: map-get($colors, "main orange");
+    }
+  }
+  .screen{
+      img{
+        width: 33rem;
+        height: auto;
+        position: absolute;
+        top: 120%;
+        left: 2.2rem;
+        @include lg{
+          width:80rem;
+          top: 55%;
+          left: 18%;
+        }
+
+      }
+
+  }
+}

@@ -1,0 +1,25 @@
+@import './_reset.scss';
+@import './variables';
+@import './_mixin.scss';
+
+html{
+    font-size: 10px;
+}
+body{
+    overflow-x: hidden;
+}
+.container-1, .container-2{
+    max-width: 36rem;
+    @include lg {
+        max-width: 125rem;      
+    }
+}
+@import './_header.scss';
+@import './_services.scss';
+@import './_brands.scss';
+@import './_products.scss';
+@import './_whyus.scss';
+@import './_statistics.scss';
+@import './_howdoit.scss';
+@import './_blog.scss';
+@import './_footer.scss';

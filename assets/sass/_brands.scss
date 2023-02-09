@@ -1,0 +1,64 @@
+.brands{
+    background-color: white;
+    padding-top: 7rem;
+}
+.brands .container{
+    border-bottom: 1px solid #E6E8EA;
+    padding-bottom: 6rem;
+    max-width: 36rem;
+    margin: 0 auto;
+    @include flex (column, $align:center);
+    gap: 6rem;
+    @include lg{
+        max-width: 125rem;
+        padding-bottom: 8rem;
+    }
+
+    .title-brand{
+        width: 100%;
+        text-align: center;
+        h2{
+            @include fonts (500, 2.4rem,3.1rem);
+            @include lg{
+                @include fonts (400, 3.4rem,4.3rem);
+
+
+            }
+        }
+    }
+    .emblems{
+        width: 100%;
+        @include flex (column,center,center,wrap);
+        gap: 1rem;
+        @include lg{
+            @include flex(row, center, center, wrap);
+        }
+        .brand-part{
+            width: 100%;
+            @include flex(row, space-between);
+            @include lg{
+                width: 40rem;
+            
+            }
+            .logo{
+                width: 100%;
+                border:1px solid white;
+                border-radius:9px;
+                padding: 1rem;
+                
+                
+                
+            }
+            .logo:hover{
+                border:1px solid map-get($colors, 'main green');
+                border-radius:9px;
+                cursor: pointer;
+                
+            }
+
+        }
+
+
+    }
+    
+}
