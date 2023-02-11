@@ -98,23 +98,27 @@ footer .container{
     }
     .social-media{
         width: 100%;
+        position: relative;
+        border-bottom: 1px solid #343434;
+        
         @include lg{
+            border-bottom: none;
             @include flex (column, $align: flex-start);
             order: 1;
             height: 100%;
-            gap: 10rem;
             width: 30rem;
+            gap: 3rem;
         }
 
         .logo{
             position: absolute;
             @include flex(row, center);
             gap: 1rem;
-            top: 7.5%;
+            top: -900%;
             left: 30%;
             @include lg{
                 position: static;
-                height: 5rem;
+                height: 4rem;
             }
             img{
                 width: 4rem;
@@ -143,23 +147,25 @@ footer .container{
         
     }
 }
-footer .copyright{
-    @include flex(row, center, baseline);
-    gap: 0.5rem;
-    @include fonts (400,1.6rem);
-    color:#6E7581;
-    padding-top: 3rem;
-    border-top: 1px solid #343434;
-    margin-bottom: -2rem;
-   @include lg{
-       margin: 0;
-       border: none;
-       position: absolute;
-       top:35%;
-       left: 7%;
-       color:#3D4045;
-   }
-
-
-
+footer {
+    .copyright{
+        @include flex(row, center, baseline);
+        gap: 0.5rem;
+        @include fonts (400,1.6rem);
+        color:#6E7581;
+        position: absolute;
+        top:140%;
+        left: 16%;
+       @include lg{
+           margin: 0;
+           border: none;
+           position: static;
+        //    top:35%;
+        //    left: 7%;
+           color:#3D4045;
+       }
+    
+    
+    
+    }
 }

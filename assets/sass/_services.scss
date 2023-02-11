@@ -70,6 +70,7 @@
             .icon, .icon-2, .icon-3, .icon-4{
                 @include lg{
                     height:100%;
+                    
                 }
             }
             .icon img{
@@ -80,6 +81,7 @@
             .icon-2 img, .icon-3 img, .icon-4 img{
                 height: 3.2rem;
                 width: 3.2rem;
+                margin-right: 16px;
 
 
             } 

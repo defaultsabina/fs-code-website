@@ -137,10 +137,7 @@ header {
       animation-name: slidein2 ;
 
     }
-    .ul-show{
-      animation-duration: 1s;
-      animation-name: slidein;
-    }
+    
 
 
     .ul-list {
@@ -250,6 +247,12 @@ header {
           // }
 
       }
+    }
+    .ul-show{
+      animation-duration: 1s;
+      animation-name: slidein;
+     
+
     }
 
     .btn-contact {

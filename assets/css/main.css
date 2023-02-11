@@ -283,13 +283,6 @@ header nav .sidebar-show {
           animation-name: slidein2;
 }
 
-header nav .ul-show {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-name: slidein;
-          animation-name: slidein;
-}
-
 header nav .ul-list {
   position: fixed;
   top: 0;
@@ -471,6 +464,13 @@ header nav .ul-list a.sm {
 
 header nav .ul-list li a:hover {
   color: #43BA7F;
+}
+
+header nav .ul-show {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
 }
 
 header nav .btn-contact {
@@ -769,6 +769,7 @@ header nav .hamburger {
 .services .container .services-content .service-part .icon-2 img, .services .container .services-content .service-part .icon-3 img, .services .container .services-content .service-part .icon-4 img {
   height: 3.2rem;
   width: 3.2rem;
+  margin-right: 16px;
 }
 
 .services .container .services-content .service-part .content {
@@ -2280,10 +2281,13 @@ footer .container .mail .info-email label {
 
 footer .container .social-media {
   width: 100%;
+  position: relative;
+  border-bottom: 1px solid #343434;
 }
 
 @media screen and (min-width: 1250px) {
   footer .container .social-media {
+    border-bottom: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2298,8 +2302,8 @@ footer .container .social-media {
         -ms-flex-order: 1;
             order: 1;
     height: 100%;
-    gap: 10rem;
     width: 30rem;
+    gap: 3rem;
   }
 }
 
@@ -2316,14 +2320,14 @@ footer .container .social-media .logo {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 1rem;
-  top: 7.5%;
+  top: -900%;
   left: 30%;
 }
 
 @media screen and (min-width: 1250px) {
   footer .container .social-media .logo {
     position: static;
-    height: 5rem;
+    height: 4rem;
   }
 }
 
@@ -2396,18 +2400,16 @@ footer .copyright {
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: #6E7581;
-  padding-top: 3rem;
-  border-top: 1px solid #343434;
-  margin-bottom: -2rem;
+  position: absolute;
+  top: 140%;
+  left: 16%;
 }
 
 @media screen and (min-width: 1250px) {
   footer .copyright {
     margin: 0;
     border: none;
-    position: absolute;
-    top: 35%;
-    left: 7%;
+    position: static;
     color: #3D4045;
   }
 }

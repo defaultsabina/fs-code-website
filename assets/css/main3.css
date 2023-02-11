@@ -1436,10 +1436,13 @@ footer .container .mail .info-email label {
 
 footer .container .social-media {
   width: 100%;
+  position: relative;
+  border-bottom: 1px solid #343434;
 }
 
 @media screen and (min-width: 1025px) {
   footer .container .social-media {
+    border-bottom: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1454,8 +1457,8 @@ footer .container .social-media {
         -ms-flex-order: 1;
             order: 1;
     height: 100%;
-    gap: 10rem;
     width: 30rem;
+    gap: 3rem;
   }
 }
 
@@ -1472,14 +1475,14 @@ footer .container .social-media .logo {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 1rem;
-  top: 7.5%;
+  top: -900%;
   left: 30%;
 }
 
 @media screen and (min-width: 1025px) {
   footer .container .social-media .logo {
     position: static;
-    height: 5rem;
+    height: 4rem;
   }
 }
 
@@ -1552,18 +1555,16 @@ footer .copyright {
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: #6E7581;
-  padding-top: 3rem;
-  border-top: 1px solid #343434;
-  margin-bottom: -2rem;
+  position: absolute;
+  top: 140%;
+  left: 16%;
 }
 
 @media screen and (min-width: 1025px) {
   footer .copyright {
     margin: 0;
     border: none;
-    position: absolute;
-    top: 35%;
-    left: 7%;
+    position: static;
     color: #3D4045;
   }
 }
