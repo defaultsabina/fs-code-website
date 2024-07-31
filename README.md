@@ -7,10 +7,15 @@ This project is a website developed as the final project for the Tech Academy co
 
 ## Features
 - **Home Page:** The landing page that provides an overview of the website and its main features.
-- **Contact Page:** A page with a contact form for users to get in touch.
-- **Blog Page:** A page that displays blog posts.
+
 ![Home Page](assets/images/homepage.png)
+
+- **Contact Page:** A page with a contact form for users to get in touch.
+
 ![Contact Page](assets/images/contactpage.png)
+
+- **Blog Page:** A page that displays blog posts.
+
 ![Blog Page](assets/images/blogpage.png)
 
 ## Project Structure
