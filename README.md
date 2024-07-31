@@ -20,16 +20,16 @@ This project is a website developed as the final project for the Tech Academy co
 
 ## Project Structure
 The project directory is structured as follows:
--assets/
-    images/
-    fonts/
--index.html
--contact.html
--blog.html
--styles/
-    main.css
--scripts/
-    main.js
+- assets/
+  - images/
+  - fonts/
+- index.html
+- contact.html
+- blog.html
+- styles/
+  - main.css
+- scripts/
+  - main.js
 
 ## Technologies Used
 - HTML
