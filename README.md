@@ -1,17 +1,39 @@
-# Final project :dizzy:
+# FS Code :dizzy:
 
-**Assessment**:
-- Your project should look exactly as specified in the file
-- It should be completely responsive for phones 🖥️ 📱
-- The code must be readable and clear
-- Make frequent commits on github with the proper messages.
+# Final Project: FS-Code Website
+
+## Project Overview
+This project is a website developed as the final project for the Tech Academy course. The application showcases a website with three main pages: Home, Contact, and Blog.
+
+## Features
+- **Home Page:** The landing page that provides an overview of the website and its main features.
+- **Contact Page:** A page with a contact form for users to get in touch.
+- **Blog Page:** A page that displays blog posts.
+![Home Page](assets/images/homepage.png)
+![Contact Page](assets/images/contactpage.png)
+![Blog Page](assets/images/blogpage.png)
+
+## Project Structure
+The project directory is structured as follows:
+-assets/
+    images/
+    fonts/
+-index.html
+-contact.html
+-blog.html
+-styles/
+    main.css
+-scripts/
+    main.js
+
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+
+For any inquiries or feedback, please contact [smamedova5010@gmail.com] 
 
 
-*All images you can download from figma file 🖼️*
-[Get project's figma file](./project1.fig)
 
-If you have difficulty importing a figma file, you can use the links below
+[Get project's figma file](https://www.figma.com/design/tCN212vrDv4b4Q6XnsNHKT/project1?node-id=0-1&t=WQohEfK3AXk4ssZZ-1)
 
-[Import files into Figma](https://help.figma.com/hc/en-us/articles/360041003114-Import-files-into-Figma)
-
-[Video: Importing & Exporting](https://www.youtube.com/watch?v=cpG3foCWX-E&t=1s)
