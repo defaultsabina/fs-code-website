@@ -1,7 +1,7 @@
 # FS Code :dizzy:
 
 ## Demo 🎯
-[Final Project: FS-Code Website] (https://defaultsabina.github.io/fs-code-website/)
+[Final Project: FS-Code Website](https://defaultsabina.github.io/fs-code-website/)
 
 ## Project Overview
 This project is a website developed as the final project for the Tech Academy course. The application showcases a website with three main pages: Home, Contact, and Blog.
